@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--
+Tinker CSS Template
+https://templatemo.com/tm-506-tinker
+-->
+    <title>GI-Team-24</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+    href="css/bootstrap-datetimepicker.css"
+    rel="stylesheet"
+  />
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="css/chat.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/fontAwesome.css" />
+    <link rel="stylesheet" href="css/hero-slider.css" />
+    <link rel="stylesheet" href="css/owl-carousel.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.680.0.min.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="container">
+        <nav class="navbar navbar-inverse" role="navigation">
+          <div class="navbar-header">
+            <button
+              type="button"
+              id="nav-toggle"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#main-nav"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand scroll-top"><em>S</em>elfHelp</a>
+          </div>
+          <!--/.navbar-header-->
+          <div id="main-nav" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#" class="scroll-top">Home</a></li>
+              <li>
+                <a href="#" class="scroll-link" data-id="about">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="scroll-link" data-id="portfolio">Services</a>
+              </li>
+              <li>
+                <a
+                  href="https://gi-team-24-auth.auth.us-east-1.amazoncognito.com/signup?client_id=3ns9rnprgdlab1o0n82npu89vm&response_type=code&scope=email+openid+phone+profile&redirect_uri=https://d2z5lv98pzigix.cloudfront.net/"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--/.navbar-collapse-->
+        </nav>
+        <!--/.navbar-->
+      </div>
+      <!--/.container-->
+    </div>
+    <!--/.header-->
+    <!-- 
+    <div class="parallax-content baner-content" id="home">
+      <div class="container">
+        <div class="text-content">
+          <h2><em>TINKER</em> <span>HTML5</span> Template</h2>
+          <p>
+            Tinker is a responsive CSS template provided by templatemo site.
+            This design can be applied for any kind of website. Please mention
+            our site to your colleagues. Thank you.
+          </p>
+          <div class="primary-white-button">
+            <a href="#" class="scroll-link" data-id="about">Let's Start</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <section id="about" class="page-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div
+              class="service-item scroll-link"
+              data-id="portfolio"
+              onclick="changeSelection(this)"
+            >
+              <div class="icon">
+                <img src="img/service_icon_01.png" alt="" />
+              </div>
+              <h4>Submit a Claim</h4>
+              <div class="line-dec"></div>
+              <p>
+                Now Submitting a new claim is just one click away, Talk to our bot to Raise new Claims.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="service-item scroll-link" data-id="portfolio">
+              <div class="icon">
+                <img src="img/service_icon_02.png" alt="" />
+              </div>
+              <h4>Claim Status</h4>
+              <div class="line-dec"></div>
+              <p>
+                Checking current claim status become hasslefree, Just Enter Claim number
+              </p>
+              <!-- <div class="primary-blue-button">
+                <a href="#" class="scroll-link" data-id="portfolio"
+                  >Continue Reading</a
+                >
+              </div> -->
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="service-item scroll-link" data-id="portfolio">
+              <div class="icon">
+                <img src="img/service_icon_03.png" alt="" />
+              </div>
+              <h4>Become a Member</h4>
+              <div class="line-dec"></div>
+              <p>
+                Login to your current using unified Single Sign On
+              </p>
+              <!-- <div class="primary-blue-button">
+                <a href="#" class="scroll-link" data-id="portfolio"
+                  >Continue Reading</a
+                >
+              </div> -->
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="service-item scroll-link" data-id="portfolio">
+              <div class="icon">
+                <img src="img/service_icon_04.png" alt="" />
+              </div>
+              <h4>Policy Related Request</h4>
+              <div class="line-dec"></div>
+              <p>
+                get policy related info
+              </p>
+              <!-- <div class="primary-blue-button">
+                <a href="#" class="scroll-link" data-id="portfolio"
+                  >Continue Reading</a
+                >
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="content-wrapper">
+        <div class="inner-container container-fluid">
+          <div class="row">
+            <div
+              class="col-md-4 col-sm-12"
+              style="padding: 0; padding-left: 10px;"
+            >
+              <div class="section-heading">
+                <!-- <h4>Our Gallery</h4> -->
+                <div class="icon">
+                  <img id="iconSelected" src="img/service_icon_04.png" alt="" />
+                </div>
+
+                <h4 id="itemSelected">Policy Related Request</h4>
+                <div class="line-dec"></div>
+                <!-- <h4>Chat with us</h4> -->
+                <!-- <p>
+                  In malesuada placerat ligula et bibendum. Aenean eget urna
+                  enim. Sed enim ante, bibendum nec dictum ac, gravida ac
+                  lectus.
+                </p> -->
+                <!-- <div class="filter-categories">
+                  <ul class="project-filter">
+                    <li class="filter" data-filter="all">
+                      <span>Show All</span>
+                    </li>
+                    <li class="filter" data-filter="branding">
+                      <span>Branding</span>
+                    </li>
+                    <li class="filter" data-filter="graphic">
+                      <span>Graphic</span>
+                    </li>
+                    <li class="filter" data-filter="nature">
+                      <span>Nature</span>
+                    </li>
+                    <li class="filter" data-filter="animation">
+                      <span>Animation</span>
+                    </li>
+                  </ul>
+                </div> -->
+              </div>
+            </div>
+            <div class="col-md-8" style="padding: 0;">
+              <div id="frame" class="projects-holder-3">
+                <div class="content cardView">
+                  <!-- <div class="contact-profile">
+                    <img
+                      src="http://emilcarlsson.se/assets/harveyspecter.png"
+                      alt=""
+                    />
+                    <p>Harvey Specter</p>
+                    <div class="social-media">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                  </div> -->
+                  <div id="conversation" class="messages chatbotHeight">
+                    <div id="botDisplay">
+                      <div style="text-align: center;">
+                        <img src="img/bot.gif" style="max-width: 60%; margin: auto; margin-top: -50px;"/>
+                      </div>
+                      <div id="suggestedActions">
+                        <div class="col-md-6 col-md-offset-3">
+                          <div id="owl-testimonials" class="owl-carousel owl-theme">
+                            <div class="item">
+                              <div class="testimonials-item">
+                                <h4>Hello There</h4>
+                                <span>How can I help you</span>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="testimonials-item">
+                                <h4>Get your claim status</h4>
+                                <!-- <span>Art Director</!--> 
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="testimonials-item">
+                                <h4>OR File a Claim</h4>
+                                <!-- <span>Founder</span> -->
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="testimonials-item">
+                                <h4>Or ask Me anything</h4>
+                                <!-- <span>Senior Developer</span> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <ul>
+                    </ul>
+                  </div>
+                  <!-- <div class="container">
+                    <div class="row">
+                        <div class='col-sm-6'>
+                            <div class="form-group">
+                                <div class='input-group date' id=''>
+                                    <input type='text' id='datetimepicker1' class="form-control" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div> -->
+
+
+
+                  <div class="message-input">
+                    <!-- <div style="text-align: center;" id="botDisplayIcon">
+                      <img src="img/bot.gif" style="max-width: 60%; margin: auto;"/>
+                    </div> -->
+                    <div class="wrap">
+                      <input type="text" id="wisdom" placeholder="Ask me something" />
+                        <input type='text' id='datetimepicker1' placeholder="Select a date" />
+                      <div id="botDisplayIcon">
+                        <img src="img/bot.gif" />
+                      </div>
+                      <!-- <i
+                        class="fa fa-paperclip attachment"
+                        aria-hidden="true"
+                      ></i>
+                      <button class="submit">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                      </button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-12">
+            <div class="connect-us">
+              <h4>Get Social with us</h4>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-1.11.2.min.js"><\/script>'
+        );
+    </script>
+
+    <script src="js/vendor/bootstrap.js"></script>
+    <script src="js/vendor/moment.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="js/vendor/bootstrap-datetimepicker.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // navigation click actions
+        $(".scroll-link").on("click", function (event) {
+          event.preventDefault();
+          var sectionID = $(this).attr("data-id");
+          scrollToID("#" + sectionID, 750);
+        });
+        // scroll to top action
+        $(".scroll-top").on("click", function (event) {
+          event.preventDefault();
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
+        // mobile nav toggle
+        $("#nav-toggle").on("click", function (event) {
+          event.preventDefault();
+          $("#main-nav").toggleClass("open");
+        });
+
+       
+      });
+      // scroll function
+      function scrollToID(id, speed) {
+        var offSet = 50;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $("#main-nav");
+        $("html,body").animate({ scrollTop: targetOffset }, speed);
+        if (mainNav.hasClass("open")) {
+          mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+          mainNav.removeClass("open");
+        }
+      }
+      if (typeof console === "undefined") {
+        console = {
+          log: function () {},
+        };
+      }
+      function changeSuggestion(obj) {
+        // var c = this.getElementById("myDIV").children.length;
+          // console.log($(this).children('h4').text());
+
+        
+
+        $("#suggestedActions").html('')
+
+          $.each( obj, function( key, value ) {
+            $(
+              '<button type="button" class="btn btn-info btn-lg pushdata">'+value.title+'</button>'
+            ).appendTo($("#suggestedActions"));
+
+          });
+
+        //   $(
+        //   '<button type="button" class="btn btn-info">Info2</button>'
+        // ).appendTo($("#suggestedActions"));
+        // $(".contact.active .preview").html("<span>You: </span>" + daText);
+        $(".messages").animate({ scrollTop: $(document).height() }, "fast");
+        }
+
+
+        $('#about .scroll-link').click(function() {
+          console.log($(this).children('h4').text());
+        //  $(this).css('border', '1px solid red');
+        $('#iconSelected').attr('src',$(this).children('.icon').children('img').attr('src'));
+        var title = $(this).children('h4').text();
+        $('#itemSelected').text(title);
+
+        if (title === "Submit a Claim") {
+        var obj = [
+            {
+            title: "Claim status",
+            action: "no duh"
+            },
+            {
+            title: "claim Intimation",
+            action: "no duh"
+            }
+        ];
+          }
+
+          if (title === "Claim Status") {
+        var obj = [
+            {
+            title: "Claim status",
+            action: "no duh"
+            },
+            {
+            title: "claims",
+            action: "no duh"
+            },
+            {
+            title: "claim",
+            action: "no duh"
+            }
+        ];
+          }
+
+          if (title === "Become a Member") {
+        var obj = [
+            {
+            title: "Sign In",
+            action: "no duh"
+            },
+            {
+            title: "Sign Up",
+            action: "no duh"
+            },
+            {
+            title: "Register via mobile",
+            action: "no duh"
+            }
+        ];
+          }
+          if (title === "Policy Related Request") {
+        var obj = [
+            {
+            title: "Health card",
+            action: "no duh"
+            },
+            {
+            title: "Health card Download",
+            action: "no duh"
+            },
+            {
+            title: "Renew policy",
+            action: "no duh"
+            },
+            {
+            title: "renew my policy",
+            action: "no duh"
+            }
+        ];
+          }
+          
+
+        changeSuggestion(obj);
+        });
+
+    </script>
+  </body>
+</html>
+
+<!-- _________------_________-_____------------------_______________________----------------________
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->

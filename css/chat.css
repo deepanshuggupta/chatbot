@@ -1,0 +1,239 @@
+@media screen and (min-width: 900px) {
+  #frame .content {
+    width: calc(100% - 340px);
+  }
+}
+
+.chatbotHeight {
+  height: 600px !important;
+  margin-bottom: 24px;
+}
+
+#frame .content {
+  float: right;
+  width: 100%;
+  height: calc(100vh - 80px);
+  /* overflow: hidden; */
+  position: relative;
+  background: #ffffff;
+  padding-top: 10px;
+}
+
+#frame .content .contact-profile {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #f5f5f5;
+}
+
+#frame .content .contact-profile img {
+  width: 40px;
+  border-radius: 50%;
+  float: left;
+  margin: 9px 12px 0 9px;
+}
+
+#frame .content .contact-profile p {
+  float: left;
+}
+
+#frame .content .contact-profile .social-media {
+  float: right;
+}
+
+#frame .content .contact-profile .social-media i {
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+#frame .content .contact-profile .social-media i:nth-last-child(1) {
+  margin-right: 20px;
+}
+
+#frame .content .contact-profile .social-media i {
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+#frame .content .messages {
+  height: auto;
+  min-height: calc(100% - 93px);
+  max-height: calc(100% - 93px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+#frame .content .messages ul li {
+  display: inline-block;
+  clear: both;
+  float: left;
+  margin: 15px 15px 5px 15px;
+  width: calc(100% - 25px);
+  font-size: 0.9em;
+}
+
+#frame .content .messages ul li.sent img {
+  margin: 6px 8px 0 0;
+}
+
+#frame .content .messages ul li img {
+  width: 22px;
+  border-radius: 50%;
+  float: left;
+}
+
+#frame .content .messages ul li.sent p {
+  background: #435f7a;
+  color: #f5f5f5;
+}
+
+#frame .content .messages ul li {
+  display: inline-block;
+  clear: both;
+  float: left;
+  margin: 15px 15px 5px 15px;
+  width: calc(100% - 25px);
+  font-size: 0.9em;
+}
+
+#frame .content .messages ul li.replies img {
+  float: right;
+  margin: 6px 0 0 8px;
+}
+#frame .content .messages ul li.replies p img {
+  max-width: 100%;
+  width: auto;
+  border-radius: 0;
+}
+#frame .content .messages ul li.replies-error img {
+  float: right;
+  margin: 6px 0 0 8px;
+}
+
+#frame .content .messages ul li img {
+  width: 22px;
+  border-radius: 50%;
+  float: left;
+}
+
+#frame .content .messages ul li.replies p {
+  background: #f5f5f5;
+  float: right;
+}
+
+#frame .content .messages ul li.replies-error p {
+  background: #fd472f;
+  float: right;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 735px) {
+  #frame .content .messages ul li p {
+    max-width: 300px;
+  }
+}
+
+#frame .content .messages ul li p {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 350px;
+  line-height: 130%;
+}
+
+#frame .content .message-input {
+  position: absolute;
+  bottom: 0;
+  width: 91%;
+  z-index: 99;
+}
+
+#frame .content .message-input .wrap {
+  position: relative;
+}
+
+#frame .content .message-input .wrap input {
+  font-family: "proxima-nova", "Source Sans Pro", sans-serif;
+  float: left;
+  border: none;
+  width: 100% ;
+  padding: 11px 32px 10px 8px;
+  font-size: 1.8em;
+  color: #33c1cf;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #33c1cf;
+  background: #fafafa;
+  outline: none;
+  
+}
+
+input,
+button,
+select,
+textarea {
+  /* font-family: inherit;
+    font-size: inherit; */
+  line-height: inherit;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+#frame .content .message-input .wrap .attachment {
+  position: absolute;
+  right: 60px;
+  z-index: 4;
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #435f7a;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#frame .content .message-input .wrap button {
+  float: right;
+  border: none;
+  width: 50px;
+  padding: 12px 0;
+  cursor: pointer;
+  background: #32465a;
+  color: #f5f5f5;
+}
+
+.cardView {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+#suggestedActions {
+  text-align: center;
+}
+#suggestedActions .btn {
+  margin: 10px;
+}
+#botDisplayIcon {
+  display: none;
+  text-align: right;
+    position: absolute;
+    width: 90px;
+    float: right;
+    right: 0;
+    bottom: -55px;
+}
+#datetimepicker1 {
+  display: none;
+}
